@@ -1,0 +1,180 @@
+html {
+	padding: 0;
+	margin: 0;
+	font-family: arial;
+	height: 100%;
+	color: #999;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	background-image: url("/public/Assets/images/backgroundimage.jpg");
+	background-size: cover;
+	background-position: center;
+	min-height: 100%;
+}
+
+
+header {
+	padding: 20px 0 0 50px;
+}
+
+header #brand img {
+	height: 45px;
+}
+
+footer {
+	background-color: rgba(0,0,0,.7);
+	padding: 30px;
+	margin-top: 100px;
+}
+
+footer p {
+	margin-top: 0;
+}
+
+footer a {
+	font-size: 0.7em;
+	color: #999;
+	text-decoration: none;
+	margin-right: 50px;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+section {
+	flex-grow: 1;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+h1 {
+	font-size: 2em;
+	margin: 0 0 30px 0;
+}
+
+#search {
+	margin-top: 25px;
+
+}
+
+#form input[type="text"] {
+	/* width: 300px;
+	border-radius: 15px;
+	border: 1px solid red; */
+	background-color: transparent;
+    border: 2px solid rgb(255, 30, 30);
+    border-radius: 50px;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    color: #fff;
+	width: 300px;
+
+}
+
+input[type="email"], input[type="password"], input[type="text"]{
+	padding: 15px;
+	width: 100%;
+	font-size: 1em;
+	border: 0;
+	border-radius: 5px;
+	color: #b3b3b3;
+	background-color: #333333;
+	margin-bottom: 15px;
+}
+
+.logo-allmovie {
+	margin-left: 15px;
+	width: 200px;
+}
+
+
+button {
+	background-color: #E50914;
+	color: white;
+	padding: 15px;
+	width: 100%;
+	font-size: 1em;
+	font-weight: bold;
+	border-radius: 5px;
+	border: 0;
+	cursor: pointer;
+}
+
+#option {
+	color: #b3b3b3;
+	margin-top: 10px;
+	display: block;
+	font-size: 0.9em;
+}
+
+#login-body {
+	max-width: 450px;
+	margin: auto;
+	background-color: rgba(0,0,0,.75);
+	color: white;
+	border-radius: 5px;
+	padding: 50px;
+	margin-top: 50px;
+}
+
+.grey {
+	color: #777;
+}
+
+.alert {
+	color: white;
+	border-radius: 5px;
+}
+
+.success {
+	background-color: green;
+}
+
+.error {
+	background-color: red;
+}
+
+.container {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.alert-danger {
+    color: red;
+}
+
+.alert-warning {
+    color: orange;
+}
+
+.alert-success {
+    color: green;
+}
+
+@media all and (max-width: 1030px) {
+	.container { width: 800px; }
+}
+
+@media all and (max-width: 830px) {
+	.container { width: 580px; }
+	header { text-align: center; padding-left: 20px; }
+}

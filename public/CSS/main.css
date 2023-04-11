@@ -1,0 +1,216 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2B4162;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+header {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #000000;
+    height: 100px;
+}
+
+.header-profil {
+    height: 100px;
+}
+
+.logo img {
+    width: 250px;
+}
+
+.search::placeholder {
+    color: #fff;
+}
+
+.search:focus {
+    outline: none;
+    background-color: #6C809A;
+}
+
+.logo {
+    width: 300px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+span {
+    font-size: 20px;
+}
+
+ion-icon {
+    color: #b3b3b3;
+    font-size: 30px;
+}
+
+#modificationMail {
+    width: 350px;
+}
+
+#modificationMail form {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    color: #fff;
+}
+
+form .container-modifMail input[type="email"] {
+    width: 200px;
+}
+
+
+.td, .td, .th{
+    text-align: center;
+    border: 1px solid red;
+}
+
+.tr, .th {
+    height: 60px;
+}
+
+.th {
+    color: white;
+}
+
+.table-admin {
+    border: 3px solid rgb(255, 255, 255);
+    margin: 30px;
+}
+
+.ion {
+    margin-left: 50px;
+}
+
+.cacher-element {
+    display: none;
+}
+
+.montrer-element {
+    display: block;
+}
+
+.header-right .btn-modifMail {
+    width: 50px;
+    height: 30px;
+    background: none;
+}
+
+.btn-modifMail :hover {
+    color: greenyellow;
+}
+
+.header-right {
+    margin-top: -20px;
+    
+}
+
+#container-infoProfil {
+    width: 900px;
+}
+
+/*   
+PARTIE 2
+*/
+
+.movie {
+    width: 300px;
+    margin: 1rem;
+    background-color: #6C809A;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+.movie img {
+    width: 100%;
+}
+
+.movie-info {
+    color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+}
+
+.movie-info h3 {
+    margin-top: 0;
+}
+
+.movie-info span {
+    background-color: #fff;
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.movie-info span.green {
+    color: lightgreen;
+}
+.movie-info span.orange {
+    color: orange;
+}
+.movie-info span.red {
+    color: red;
+}
+
+.overview {
+    background-color: #fff;
+    padding: 2rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-height: 100%;
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in;
+}
+
+.movie:hover .overview {
+    transform: translate(0);
+}
+
+a {
+    color: red;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.header-right {
+    position: relative;
+    top: 30px;
+}
+
+#form a {
+    margin: 0px 20px;
+}
+
+#creer {
+    color: green;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.alert-danger {
+    color: red;
+}
+
+.alert-warning {
+    color: orange;
+}
+
+.alert-success {
+    color: green;
+}
+
+
