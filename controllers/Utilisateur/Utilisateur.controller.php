@@ -49,7 +49,6 @@ class UtilisateurController extends MainController
             "page_javascript" => "main.js",
             //"page_css" => "style.css",
             "page_css" => "main.css",
-            //"page_css" => ["main.css","style.css"],
             "view" => "views/Utilisateur/utilisateur.view.php",
             "template" => "views/common/template.php"
         ];

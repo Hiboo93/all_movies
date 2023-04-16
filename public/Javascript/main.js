@@ -37,7 +37,7 @@ function showMovies(movies)
             </div>
             <div class="overview">
                 <h3>overview</h3>
-                <a href="<?= URL ?>info_movies">More info :</a>
+                <a href="#">More info :</a>
                 ${overview}
             </div>
         `
@@ -72,44 +72,44 @@ form.addEventListener('keyup', (e) => {
 })
 
 // Partie movie_info.view
-const GETMOVIE_ID = 'https://api.themoviedb.org/3/movie/{movie_id}?api_key=13a15dda4f713eaa44cebe861f03a4c2&language=en-US';
-const GETVIDEOS = 'https://api.themoviedb.org/3/movie/677179/videos?api_key=13a15dda4f713eaa44cebe861f03a4c2&language=en-US';
+// const GETMOVIE_ID = 'https://api.themoviedb.org/3/movie/{movie_id}?api_key=13a15dda4f713eaa44cebe861f03a4c2&language=en-US';
+// const GETVIDEOS = 'https://api.themoviedb.org/3/movie/677179/videos?api_key=13a15dda4f713eaa44cebe861f03a4c2&language=en-US';
 
-getMovieSolo(GETVIDEOS);
+// getMovieSolo(GETVIDEOS);
 
-async function getMovieSolo(urlvideo)
-{
-    const res = await fetch(urlvideo);
-    const data = await res.json();
+// async function getMovieSolo(urlvideo)
+// {
+//     const res = await fetch(urlvideo);
+//     const data = await res.json();
 
-    showMovieSolo(data.results)
-}
+//     showMovieSolo(data.results)
+// }
 
 
-function showMovieSolo(movie)
-{
-    mainTwo.innerHTML = '';
+// function showMovieSolo(movie)
+// {
+//     mainTwo.innerHTML = '';
 
-    movie.forEach((video) => {
-        const { title, poster_path, vote_average, overview} = video;
+//     movie.forEach((video) => {
+//         const { title, poster_path, vote_average, overview} = video;
 
-        const filmEl = document.createElement('div');
-        filmEl.classList.add('movie')
+//         const filmEl = document.createElement('div');
+//         filmEl.classList.add('movie')
 
-        filmEl.innerHTML = `
+//         filmEl.innerHTML = `
        
-            <img src="${IMG_PATH + poster_path}" alt="${title}">
-            <div class="movie-info">
-                <h3>${title}</h3>
-                <span class="${getClassByRate(vote_average)}">${vote_average}</span>
-            </div>
-            <div class="overview">
-                <h3>overview</h3>
-                <a href="<?= URL ?>compte/profil">Retour:</a>
-                ${overview}
-            </div>
-        `
-        mainTwo.appendChild(filmEl)
-    });
-}
+//             <img src="${IMG_PATH + poster_path}" alt="${title}">
+//             <div class="movie-info">
+//                 <h3>${title}</h3>
+//                 <span class="${getClassByRate(vote_average)}">${vote_average}</span>
+//             </div>
+//             <div class="overview">
+//                 <h3>overview</h3>
+//                 <a href="info_movies">Retour:</a>
+//                 ${overview}
+//             </div>
+//         `
+//         mainTwo.appendChild(filmEl)
+//     });
+// }
 

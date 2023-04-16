@@ -3,7 +3,6 @@ require_once "models/MainManager.model.php";
 
 abstract class MainController
 {
-   
     protected function genererPage($data)
     {
         extract($data);

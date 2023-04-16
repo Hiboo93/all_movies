@@ -151,8 +151,9 @@ try {
                             break;
 
                         case 'info_movies':
-                            $utilisateurController->infoMovies();
                             echo "HELLO";
+                            $utilisateurController->infoMovies();
+                            
                             break;
 
                     default : throw new Exception("La page n'existe pas");

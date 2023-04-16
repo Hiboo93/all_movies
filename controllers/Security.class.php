@@ -2,7 +2,6 @@
 
 class Security
 {
-    // c'est un cookie appelé timers pour cacher sa fonction reel
     public const COOKIE_NAME = "timers";
 
     // function qui protege comme la fonction htmlspecialchars
@@ -38,5 +37,4 @@ class Security
     {
         return $_COOKIE[self::COOKIE_NAME] === $_SESSION['profil'][self::COOKIE_NAME];
     }
-
 }
